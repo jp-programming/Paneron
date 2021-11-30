@@ -1,0 +1,60 @@
+/* main - inicio */
+h1, h2{
+    background-color: $secondary;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0;
+    color: $color-dark;
+    font-family: $font-primary;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#banner > img{
+    width: 100%;
+}
+
+#nosotrosRazones > .grid{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    gap: 5px;
+}
+
+#nosotrosRazones > .grid > .tabla{
+    text-align: center;
+    border-radius: 5px;
+    color: $color-dark;
+}
+
+#nosotrosRazones > .grid > [class*="titulo"]{
+    background-color: $secondary;
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#nosotrosRazones > .grid > [class*="contenido"]{
+    background-color: $color-light;
+    border: $secondary 4px solid;
+    font-family: $font-content;
+}
+
+#ilustraciones > .imagenes{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: grid;
+}
+
+#ilustraciones > .imagenes > img{
+    width: 100%;
+    transition: 1.5s;
+}
+
+#ilustraciones > .imagenes > img:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 3px 3px rgb(27, 18, 18);
+}
+/* main - final */

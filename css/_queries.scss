@@ -1,0 +1,95 @@
+@media only screen and (min-width: 320px){
+    #nosotrosRazones > .grid{
+        grid-template: repeat(8, auto) / 1fr;
+    }
+
+    #nosotrosRazones > .grid > .contenido1{
+        order: 1;
+    }
+
+    #nosotrosRazones > .grid > .titulo2{
+        order: 2;
+    }
+
+    #nosotrosRazones > .grid > .contenido2{
+        order: 3;
+    }
+    
+    #nosotrosRazones > .grid > .titulo3{
+        order: 4;
+    }
+
+    #nosotrosRazones > .grid > .contenido3{
+        order: 5;
+    }
+
+    #nosotrosRazones > .grid > .titulo4{
+        order: 6;
+    }
+
+    #nosotrosRazones > .grid > .contenido4{
+        order: 7;
+    }
+
+    #ilustraciones > .imagenes{
+        grid-template: 1fr;
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 480px){
+    #nosotrosRazones > .grid{
+        grid-template: auto auto auto auto / 1fr 1fr;
+    }
+
+    #nosotrosRazones > .grid > .titulo2{
+        order: 1;
+    }
+    
+    #nosotrosRazones > .grid > .contenido1{
+        order: 2;
+    }
+
+    #nosotrosRazones > .grid > .contenido2{
+        order: 3;
+    }
+
+    #nosotrosRazones > .grid > .titulo3{
+        order: 4;
+    }
+
+    #nosotrosRazones > .grid > .titulo4{
+        order: 5;
+    }
+    
+    #nosotrosRazones > .grid > .contenido3{
+        order: 6;
+    }
+
+    #nosotrosRazones > .grid > .contenido4{
+        order: 7;
+    }
+
+    #ilustraciones > .imagenes{
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 720px){
+    #nosotrosRazones > .grid{
+        grid-template: auto auto / 1fr 1fr 1fr 1fr;
+    }
+
+    #nosotrosRazones > .grid > .titulo2{
+        order: 0;
+    }
+    
+    #nosotrosRazones > .grid > .titulo3{
+        order: 0;
+    }
+
+    #nosotrosRazones > .grid > .titulo4{
+        order: 0;
+    }
+}

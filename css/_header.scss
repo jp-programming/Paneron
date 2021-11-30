@@ -1,0 +1,52 @@
+header{
+    background-color: $primary;
+    width: 100%;
+    height: auto;
+}
+
+.contenedor{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    height: 100px;
+    margin: 10px;
+    mix-blend-mode: multiply;
+}
+
+#navigation{
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+}
+
+#navigation li a{
+    color: $color-dark;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: $font-secondary;
+}
+
+#navigation li a:hover{
+    color: $color-light;
+}
+
+ul ul{
+    display: none;
+    position: absolute;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+#navigation ul li{
+    display: block;
+    background-color: $primary;
+}

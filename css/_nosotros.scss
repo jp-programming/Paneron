@@ -1,0 +1,28 @@
+/* nosotros - inicio */
+.nosotros{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros__objetivos{
+    width: 80%;
+    max-width: 700px;
+    padding: 8px;
+    border: 5px solid $color-card;
+    border-radius: 5px;
+    background-color: $color-card;
+    align-self: center;
+}
+
+.nosotros__historia{
+    @extend .nosotros__objetivos;
+}
+
+.nosotros__parrafo{
+    color: $color-light;
+    font-family: $font-content;
+    font-weight: 600;
+}
+/* nosotros - final */

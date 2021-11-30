@@ -1,0 +1,18 @@
+/* formulario - inicio*/
+.formulario{
+    width: 70%;
+    margin: 10px auto;
+    font-weight: 550;
+    font-family: $font-secondary;
+}
+
+.formulario > form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario > form > [name*="comentario"]{
+    resize: none;
+}
+/* formulario - final*/

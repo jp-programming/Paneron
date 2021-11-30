@@ -1,0 +1,48 @@
+h3{
+    color: $color-light;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 19px;
+    font-family: $font-secondary;
+}
+
+footer{
+    background-color: $secondary;
+    width: 100%;
+}
+
+.footer{
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+footer .enlaces{
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: $color-dark;
+    font-weight: 550;
+    font-family: $font-secondary;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: $color-dark;
+}
+
+footer > span{
+    display: block;
+}

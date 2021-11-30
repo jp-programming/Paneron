@@ -1,0 +1,416 @@
+/* fonts - inicio */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+/* fonts - final */
+/* reset - inicio */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d36822;
+  background: linear-gradient(0deg, #d36822 0%, #e9803b 100%);
+}
+
+/* reset - final */
+/* header - inicio */
+header {
+  background-color: #d36822;
+  width: 100%;
+  height: auto;
+}
+
+.contenedor {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  height: 100px;
+  margin: 10px;
+  mix-blend-mode: multiply;
+}
+
+#navigation {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+}
+
+#navigation li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 550;
+  font-family: "Roboto", sans-serif;
+}
+
+#navigation li a:hover {
+  color: #faf4f4;
+}
+
+ul ul {
+  display: none;
+  position: absolute;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+#navigation ul li {
+  display: block;
+  background-color: #d36822;
+}
+
+/* header - final */
+/* Paginas - inicio*/
+/* main - inicio */
+h1, h2 {
+  background-color: #e01d16;
+  text-align: center;
+  padding: 5px;
+  margin: 10px 0;
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#banner > img {
+  width: 100%;
+}
+
+#nosotrosRazones > .grid {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  gap: 5px;
+}
+
+#nosotrosRazones > .grid > .tabla {
+  text-align: center;
+  border-radius: 5px;
+  color: #000;
+}
+
+#nosotrosRazones > .grid > [class*=titulo] {
+  background-color: #e01d16;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#nosotrosRazones > .grid > [class*=contenido] {
+  background-color: #faf4f4;
+  border: #e01d16 4px solid;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#ilustraciones > .imagenes {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: grid;
+}
+
+#ilustraciones > .imagenes > img {
+  width: 100%;
+  transition: 1.5s;
+}
+
+#ilustraciones > .imagenes > img:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 3px 3px #1b1212;
+}
+
+/* main - final */
+/* productos - inicio */
+.productos {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.productos__catalogo {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  display: grid;
+  grid-template: repeat(3, 350px)/repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 15px;
+}
+
+.productos__card {
+  width: 95%;
+  background: #df1a13;
+  border: 4px solid #df1a13;
+  border-radius: 5px 5px 0 0;
+  transition: 1.25s;
+}
+
+.productos__card:hover {
+  transform: scale(0.95);
+  background: #c81711;
+  border-color: #c81711;
+}
+
+.productos__card:nth-child(9) .productos__img, .productos__card:nth-child(8) .productos__img, .productos__card:nth-child(7) .productos__img, .productos__card:nth-child(6) .productos__img, .productos__card:nth-child(5) .productos__img, .productos__card:nth-child(4) .productos__img, .productos__card:nth-child(3) .productos__img, .productos__card:nth-child(2) .productos__img, .productos__card:nth-child(1) .productos__img {
+  width: 100%;
+  border-bottom: 4px solid #df1a13;
+  border-radius: 0 0 5px 5px;
+  background-color: #e01d16;
+  height: 267px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.productos__card:nth-child(1) .productos__img {
+  background-image: url("../img/hogaza.jpg");
+}
+
+.productos__card:nth-child(2) .productos__img {
+  background-image: url("../img/baguette.jpg");
+}
+
+.productos__card:nth-child(3) .productos__img {
+  background-image: url("../img/viena.jpg");
+}
+
+.productos__card:nth-child(4) .productos__img {
+  background-image: url("../img/cereales.jpg");
+}
+
+.productos__card:nth-child(5) .productos__img {
+  background-image: url("../img/molde.jpg");
+}
+
+.productos__card:nth-child(6) .productos__img {
+  background-image: url("../img/integral.jpg");
+}
+
+.productos__card:nth-child(7) .productos__img {
+  background-image: url("../img/croissant.jpg");
+}
+
+.productos__card:nth-child(8) .productos__img {
+  background-image: url("../img/donuts.jpg");
+}
+
+.productos__card:nth-child(9) .productos__img {
+  background-image: url("../img/pretzel.jpg");
+}
+
+.productos__texto {
+  width: 95%;
+  margin-top: 10px;
+  color: #faf4f4;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+/* nosotros - inicio */
+.nosotros {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nosotros__objetivos, .nosotros__historia {
+  width: 80%;
+  max-width: 700px;
+  padding: 8px;
+  border: 5px solid #df1a13;
+  border-radius: 5px;
+  background-color: #df1a13;
+  align-self: center;
+}
+
+.nosotros__parrafo {
+  color: #faf4f4;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+/* nosotros - final */
+/* formulario - inicio*/
+.formulario {
+  width: 70%;
+  margin: 10px auto;
+  font-weight: 550;
+  font-family: "Roboto", sans-serif;
+}
+
+.formulario > form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formulario > form > [name*=comentario] {
+  resize: none;
+}
+
+/* formulario - final*/
+/* Paginas - final*/
+/* footer - inicio */
+h3 {
+  color: #faf4f4;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  background-color: #e01d16;
+  width: 100%;
+}
+
+.footer {
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+footer .enlaces {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 550;
+  font-family: "Roboto", sans-serif;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+footer > span {
+  display: block;
+}
+
+/* footer - final */
+/* media queries - inicio*/
+@media only screen and (min-width: 320px) {
+  #nosotrosRazones > .grid {
+    grid-template: repeat(8, auto)/1fr;
+  }
+
+  #nosotrosRazones > .grid > .contenido1 {
+    order: 1;
+  }
+
+  #nosotrosRazones > .grid > .titulo2 {
+    order: 2;
+  }
+
+  #nosotrosRazones > .grid > .contenido2 {
+    order: 3;
+  }
+
+  #nosotrosRazones > .grid > .titulo3 {
+    order: 4;
+  }
+
+  #nosotrosRazones > .grid > .contenido3 {
+    order: 5;
+  }
+
+  #nosotrosRazones > .grid > .titulo4 {
+    order: 6;
+  }
+
+  #nosotrosRazones > .grid > .contenido4 {
+    order: 7;
+  }
+
+  #ilustraciones > .imagenes {
+    grid-template: 1fr;
+    gap: 10px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  #nosotrosRazones > .grid {
+    grid-template: auto auto auto auto/1fr 1fr;
+  }
+
+  #nosotrosRazones > .grid > .titulo2 {
+    order: 1;
+  }
+
+  #nosotrosRazones > .grid > .contenido1 {
+    order: 2;
+  }
+
+  #nosotrosRazones > .grid > .contenido2 {
+    order: 3;
+  }
+
+  #nosotrosRazones > .grid > .titulo3 {
+    order: 4;
+  }
+
+  #nosotrosRazones > .grid > .titulo4 {
+    order: 5;
+  }
+
+  #nosotrosRazones > .grid > .contenido3 {
+    order: 6;
+  }
+
+  #nosotrosRazones > .grid > .contenido4 {
+    order: 7;
+  }
+
+  #ilustraciones > .imagenes {
+    grid-template: 1fr 1fr/1fr 1fr;
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 720px) {
+  #nosotrosRazones > .grid {
+    grid-template: auto auto/1fr 1fr 1fr 1fr;
+  }
+
+  #nosotrosRazones > .grid > .titulo2 {
+    order: 0;
+  }
+
+  #nosotrosRazones > .grid > .titulo3 {
+    order: 0;
+  }
+
+  #nosotrosRazones > .grid > .titulo4 {
+    order: 0;
+  }
+}
+/* media queries - final*/
+
+/*# sourceMappingURL=style.css.map */
