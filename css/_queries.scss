@@ -35,6 +35,10 @@
         grid-template: 1fr;
         gap: 10px;
     }
+    
+    .productos__catalogo{
+        grid-template: repeat(9, 350px) / 1fr;
+    }
 }
 
 @media only screen and (min-width: 480px){
@@ -74,6 +78,7 @@
         grid-template: 1fr 1fr / 1fr 1fr;
         gap: 20px;
     }
+
 }
 
 @media only screen and (min-width: 720px){
@@ -91,5 +96,15 @@
 
     #nosotrosRazones > .grid > .titulo4{
         order: 0;
+    }
+
+    .productos__catalogo{
+        grid-template: repeat(4, 350px) / repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .productos__catalogo{
+        grid-template: repeat(3, 350px) / repeat(3, 1fr);
     }
 }

@@ -36,17 +36,3 @@ header{
 #navigation li a:hover{
     color: $color-light;
 }
-
-ul ul{
-    display: none;
-    position: absolute;
-}
-
-ul li:hover ul{
-    display: block;
-}
-
-#navigation ul li{
-    display: block;
-    background-color: $primary;
-}

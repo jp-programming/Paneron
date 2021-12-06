@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: $primary;
     background: linear-gradient(0deg, $primary 0%, rgba(233,128,59,1) 100%);

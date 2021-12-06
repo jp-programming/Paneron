@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #d36822;
   background: linear-gradient(0deg, #d36822 0%, #e9803b 100%);
@@ -40,7 +44,8 @@ header {
 
 #navigation {
   display: flex;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   list-style: none;
 }
 
@@ -54,20 +59,6 @@ header {
 
 #navigation li a:hover {
   color: #faf4f4;
-}
-
-ul ul {
-  display: none;
-  position: absolute;
-}
-
-ul li:hover ul {
-  display: block;
-}
-
-#navigation ul li {
-  display: block;
-  background-color: #d36822;
 }
 
 /* header - final */
@@ -146,7 +137,6 @@ h1, h2 {
   margin: 0 auto;
   padding: 10px;
   display: grid;
-  grid-template: repeat(3, 350px)/repeat(3, 1fr);
   justify-items: center;
   row-gap: 15px;
 }
@@ -246,10 +236,29 @@ h1, h2 {
 }
 
 /* nosotros - final */
+/* faq - inicio */
+.faq {
+  width: 75%;
+  margin: 15px auto;
+}
+
+.faq h2 > button {
+  color: #faf4f4;
+  background-color: #e01d16;
+  font-family: "Roboto", sans-serif;
+  font-weight: 550;
+}
+
+.faq h2 button:not(.collapse) {
+  color: #000;
+  background-color: #e01d16;
+}
+
+/* faq - final */
 /* formulario - inicio*/
 .formulario {
   width: 70%;
-  margin: 10px auto;
+  margin: 30px auto;
   font-weight: 550;
   font-family: "Roboto", sans-serif;
 }
@@ -265,6 +274,12 @@ h1, h2 {
 }
 
 /* formulario - final*/
+/* location - inicio*/
+.location > iframe {
+  width: 100%;
+}
+
+/* location - final*/
 /* Paginas - final*/
 /* footer - inicio */
 h3 {
@@ -314,6 +329,18 @@ footer a:hover {
 
 footer > span {
   display: block;
+  text-align: center;
+  color: #faf4f4;
+  font-family: "Roboto", sans-serif;
+}
+
+footer > span > a {
+  color: #faf4f4;
+}
+
+footer > span > a:hover {
+  text-decoration: none;
+  color: #000;
 }
 
 /* footer - final */
@@ -354,6 +381,10 @@ footer > span {
   #ilustraciones > .imagenes {
     grid-template: 1fr;
     gap: 10px;
+  }
+
+  .productos__catalogo {
+    grid-template: repeat(9, 350px)/1fr;
   }
 }
 @media only screen and (min-width: 480px) {
@@ -410,7 +441,14 @@ footer > span {
   #nosotrosRazones > .grid > .titulo4 {
     order: 0;
   }
-}
-/* media queries - final*/
 
-/*# sourceMappingURL=style.css.map */
+  .productos__catalogo {
+    grid-template: repeat(4, 350px)/repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .productos__catalogo {
+    grid-template: repeat(3, 350px)/repeat(3, 1fr);
+  }
+}
+/* media queries - final*//*# sourceMappingURL=style.css.map */

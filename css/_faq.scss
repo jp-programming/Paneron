@@ -1,0 +1,18 @@
+/* faq - inicio */
+.faq{
+    width: 75%;
+    margin: 15px auto;   
+}
+
+.faq h2 > button{
+    color: $color-light;
+    background-color: $secondary;
+    font-family: $font-secondary;
+    font-weight: 550;
+}
+
+.faq h2 button:not(.collapse){
+    color: $color-dark;
+    background-color: $secondary;
+}
+/* faq - final */

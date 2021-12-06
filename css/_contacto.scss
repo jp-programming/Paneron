@@ -1,7 +1,7 @@
 /* formulario - inicio*/
 .formulario{
     width: 70%;
-    margin: 10px auto;
+    margin: 30px auto;
     font-weight: 550;
     font-family: $font-secondary;
 }
@@ -16,3 +16,8 @@
     resize: none;
 }
 /* formulario - final*/
+/* location - inicio*/
+.location > iframe{
+    width: 100%;
+}
+/* location - final*/
